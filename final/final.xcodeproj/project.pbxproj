@@ -16,6 +16,12 @@
 		F70503C327E7FA2800D1F52D /* finalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70503C227E7FA2800D1F52D /* finalTests.swift */; };
 		F70503CD27E7FA2800D1F52D /* finalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70503CC27E7FA2800D1F52D /* finalUITests.swift */; };
 		F70503CF27E7FA2800D1F52D /* finalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70503CE27E7FA2800D1F52D /* finalUITestsLaunchTests.swift */; };
+		F7270D0527F29E660017F3A1 /* extractImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0427F29E660017F3A1 /* extractImage.swift */; };
+		F7270D0727F3E8A90017F3A1 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0627F3E8A90017F3A1 /* Resnet50.mlmodel */; };
+		F7270D0927F3E9300017F3A1 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0827F3E9300017F3A1 /* SqueezeNet.mlmodel */; };
+		F7270D0B27F3EDB90017F3A1 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0A27F3EDB90017F3A1 /* MobileNetV2.mlmodel */; };
+		F7270D0D27F3F0160017F3A1 /* PredictorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0C27F3F0160017F3A1 /* PredictorController.swift */; };
+		F7270D0F27F3F5330017F3A1 /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0E27F3F5330017F3A1 /* Predictor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		F70503C827E7FA2800D1F52D /* finalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70503CC27E7FA2800D1F52D /* finalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalUITests.swift; sourceTree = "<group>"; };
 		F70503CE27E7FA2800D1F52D /* finalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7270D0427F29E660017F3A1 /* extractImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extractImage.swift; sourceTree = "<group>"; };
+		F7270D0627F3E8A90017F3A1 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		F7270D0827F3E9300017F3A1 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		F7270D0A27F3EDB90017F3A1 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		F7270D0C27F3F0160017F3A1 /* PredictorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictorController.swift; sourceTree = "<group>"; };
+		F7270D0E27F3F5330017F3A1 /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				F70503AB27E7FA2600D1F52D /* AppDelegate.swift */,
+				F7270D0427F29E660017F3A1 /* extractImage.swift */,
 				F70503AD27E7FA2600D1F52D /* SceneDelegate.swift */,
 				F70503AF27E7FA2600D1F52D /* ViewController.swift */,
+				F7270D0C27F3F0160017F3A1 /* PredictorController.swift */,
+				F7270D0E27F3F5330017F3A1 /* Predictor.swift */,
 				F70503B127E7FA2600D1F52D /* Main.storyboard */,
 				F70503B427E7FA2800D1F52D /* Assets.xcassets */,
 				F70503B627E7FA2800D1F52D /* LaunchScreen.storyboard */,
 				F70503B927E7FA2800D1F52D /* Info.plist */,
+				F7270D0627F3E8A90017F3A1 /* Resnet50.mlmodel */,
+				F7270D0827F3E9300017F3A1 /* SqueezeNet.mlmodel */,
+				F7270D0A27F3EDB90017F3A1 /* MobileNetV2.mlmodel */,
 			);
 			path = final;
 			sourceTree = "<group>";
@@ -258,8 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7270D0B27F3EDB90017F3A1 /* MobileNetV2.mlmodel in Sources */,
 				F70503B027E7FA2600D1F52D /* ViewController.swift in Sources */,
 				F70503AC27E7FA2600D1F52D /* AppDelegate.swift in Sources */,
+				F7270D0927F3E9300017F3A1 /* SqueezeNet.mlmodel in Sources */,
+				F7270D0D27F3F0160017F3A1 /* PredictorController.swift in Sources */,
+				F7270D0527F29E660017F3A1 /* extractImage.swift in Sources */,
+				F7270D0727F3E8A90017F3A1 /* Resnet50.mlmodel in Sources */,
+				F7270D0F27F3F5330017F3A1 /* Predictor.swift in Sources */,
 				F70503AE27E7FA2600D1F52D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
