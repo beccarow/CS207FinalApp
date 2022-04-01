@@ -29,4 +29,70 @@ class Predictor {
         
         return visionModel
     }
+    
+    private static let imageClassifier = createImageClassifier()
+    
+    struct Prediction {
+        
+        let classification: String
+        
+       // let isWaterBottle: Bool
+    }
+    
+    typealias ImagePredictionHandler = (_ predictions: [Prediction]?) -> Void
+    
+    private var predictionHandlers = [VNRequest: ImagePredictionHandler]()
+    
+    private func createImageClassifierRequest() -> VNImageBasedRequest {
+        let classificationRequest = VNCoreMLRequest(model: Predictor.imageClassifier, completionHandler: visionRequestHandler)
+        
+        return classificationRequest
+        
+    }
+    
+    func makePredictions(for photo: UIImage, completionHandler: @escaping ImagePredictionHandler) throws {
+        let orientation = CGImagePropertyOrientation(rawValue: photo.imageOrientation)
+        
+        guard let photoImage = photo.cgImage else {
+            fatalError("Photo doesn't have underlying CGImage")
+            
+        }
+        
+        let classificationRequest = createImageClassifierRequest()
+        predictionHandlers[classificationRequest] = completionHandler
+        
+        let handler = VNImageRequestHandler(cgImage: photoImage, orientation: orientation)
+        let requests: [VNRequest] = [classificationRequest]
+        
+        try handler.perform(requests)
+    }
+    
+    private func visionRequestHandler(_ request: VNRequest, error:Error?) {
+        guard let predictionHandler = predictionHandlers.removeValue(forKey: request) else {
+            fatalError("Request must include a prediction handler")
+        }
+        
+        var predictions: [Prediction]? = nil
+        
+        defer {
+            predictionHandler(predictions)
+        }
+        
+        if let error = error {
+            print("Vision image classifier error...\n\n\(error.localizedDescription)")
+        }
+        
+        if request.results == nil {
+            print("Vision request had no results")
+        }
+        
+        guard let observations = request.results as? [VNClassificationObservation] else {
+            print("VNRequest produced wrong result type: \(type(of: request.results))")
+            return
+        }
+        
+        predictions = observations.map { observation in
+            Prediction(classification: observation.identifier)
+        }
+    }
 }
