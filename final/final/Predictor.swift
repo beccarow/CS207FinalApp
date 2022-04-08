@@ -10,6 +10,8 @@ import Vision
 import UIKit
 import CoreML
 
+// Identifies object in frame based on CoreML model
+
 
 class Predictor {
     static func createImageClassifier() -> VNCoreMLModel {
@@ -36,7 +38,7 @@ class Predictor {
         
         let classification: String
         
-       // let isWaterBottle: Bool
+        let confidencePercentage: String
     }
     
     typealias ImagePredictionHandler = (_ predictions: [Prediction]?) -> Void
@@ -51,7 +53,8 @@ class Predictor {
     }
     
     func makePredictions(for photo: UIImage, completionHandler: @escaping ImagePredictionHandler) throws {
-        let orientation = CGImagePropertyOrientation(rawValue: photo.imageOrientation)
+        guard let orientation = CGImagePropertyOrientation(rawValue: UInt32(UIDevice.current.orientation.rawValue)) else { return <#default value#> }
+        //CGImagePropertyOrientation(rawValue: photo.imageOrientation)
         
         guard let photoImage = photo.cgImage else {
             fatalError("Photo doesn't have underlying CGImage")
@@ -92,7 +95,19 @@ class Predictor {
         }
         
         predictions = observations.map { observation in
-            Prediction(classification: observation.identifier)
+            Prediction(classification: observation.identifier,
+                       confidencePercentage: observation.confidencePercentageString)
         }
     }
 }
+
+
+/*in view controller:
+
+DispatchQueue.main.async { [unowned self] in
+  if let first = results.first {
+     if Int(first.confidence * 100) > 1 && first.identifier == "plastic bag" {
+      self.LABEL.text = "I am \String(Int(first.confidence * 100))% sure that this is a \(first.identifier)"
+      self.settingImage = false
+    }
+  } */

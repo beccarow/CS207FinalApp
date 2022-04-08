@@ -22,6 +22,7 @@
 		F7270D0B27F3EDB90017F3A1 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0A27F3EDB90017F3A1 /* MobileNetV2.mlmodel */; };
 		F7270D0D27F3F0160017F3A1 /* PredictorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0C27F3F0160017F3A1 /* PredictorController.swift */; };
 		F7270D0F27F3F5330017F3A1 /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270D0E27F3F5330017F3A1 /* Predictor.swift */; };
+		F7F23DF827F6A0F300FC432A /* confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F23DF727F6A0F300FC432A /* confidenceString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F7270D0A27F3EDB90017F3A1 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		F7270D0C27F3F0160017F3A1 /* PredictorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictorController.swift; sourceTree = "<group>"; };
 		F7270D0E27F3F5330017F3A1 /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		F7F23DF727F6A0F300FC432A /* confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confidenceString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				F70503AF27E7FA2600D1F52D /* ViewController.swift */,
 				F7270D0C27F3F0160017F3A1 /* PredictorController.swift */,
 				F7270D0E27F3F5330017F3A1 /* Predictor.swift */,
+				F7F23DF727F6A0F300FC432A /* confidenceString.swift */,
 				F70503B127E7FA2600D1F52D /* Main.storyboard */,
 				F70503B427E7FA2800D1F52D /* Assets.xcassets */,
 				F70503B627E7FA2800D1F52D /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F23DF827F6A0F300FC432A /* confidenceString.swift in Sources */,
 				F7270D0B27F3EDB90017F3A1 /* MobileNetV2.mlmodel in Sources */,
 				F70503B027E7FA2600D1F52D /* ViewController.swift in Sources */,
 				F70503AC27E7FA2600D1F52D /* AppDelegate.swift in Sources */,
