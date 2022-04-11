@@ -37,18 +37,19 @@ class pickImageViewController: UIViewController, UINavigationControllerDelegate,
 
     @IBOutlet var imageView: UIImageView! //connect to UIImageView on storyboard
     @IBOutlet var chooseButton: UIButton! //connect to UIButton on storyboard
-    var imagePicker = UIImagePickerController()
+    var myImagePicker = UIImagePickerController() //could be a let I think
 
     @IBAction func btnClicked() {
 
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
             print("Button capture")
 
-            imagePicker.delegate = self
-            imagePicker.sourceType = .savedPhotosAlbum
-            imagePicker.allowsEditing = false
+            myImagePicker.delegate = self
+            myImagePicker.sourceType = .photoLibrary //another source type: .camera
+            myImagePicker.allowsEditing = false //true: allows resizing/cropping after selection
+            //myImagePicker.mediaTypes = ["public.image"] -- only pictures, not movies/videos
 
-            present(imagePicker, animated: true, completion: nil)
+            present(myImagePicker, animated: true, completion: nil)
         }
     }
 
