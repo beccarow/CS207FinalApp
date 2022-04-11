@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8BC8C52804D15100335ACC /* pickImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BC8C42804D15100335ACC /* pickImageViewController.swift */; };
 		72E06F3B27FAC032006669CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06F3A27FAC032006669CC /* AppDelegate.swift */; };
 		72E06F3D27FAC032006669CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06F3C27FAC032006669CC /* SceneDelegate.swift */; };
 		72E06F3F27FAC032006669CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06F3E27FAC032006669CC /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F8BC8C42804D15100335ACC /* pickImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickImageViewController.swift; sourceTree = "<group>"; };
 		72E06F3727FAC032006669CC /* final_storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final_storyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E06F3A27FAC032006669CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E06F3C27FAC032006669CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				72E06F3A27FAC032006669CC /* AppDelegate.swift */,
 				72E06F3C27FAC032006669CC /* SceneDelegate.swift */,
 				72E06F3E27FAC032006669CC /* ViewController.swift */,
+				3F8BC8C42804D15100335ACC /* pickImageViewController.swift */,
 				F7F23DFB280092E200FC432A /* MobileNetV2.mlmodel */,
 				F7F23DFD2800930A00FC432A /* Predictor.swift */,
 				F7F23DFF2800932100FC432A /* confidenceString.swift */,
@@ -152,6 +155,7 @@
 				F7F23E002800932100FC432A /* confidenceString.swift in Sources */,
 				F7F23DFC280092E200FC432A /* MobileNetV2.mlmodel in Sources */,
 				72E06F3D27FAC032006669CC /* SceneDelegate.swift in Sources */,
+				3F8BC8C52804D15100335ACC /* pickImageViewController.swift in Sources */,
 				F7F23DFE2800930A00FC432A /* Predictor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
