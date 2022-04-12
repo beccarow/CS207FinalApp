@@ -41,7 +41,7 @@ class pickImageViewController: UIViewController, UINavigationControllerDelegate,
 
     @IBAction func btnClicked() { //connect to UIButton on storyboard
 
-        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
             print("Button capture")
 
             myImagePicker.delegate = self

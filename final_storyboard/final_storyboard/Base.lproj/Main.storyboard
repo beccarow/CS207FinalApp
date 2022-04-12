@@ -89,10 +89,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMw-5k-Hbt">
-                                <rect key="frame" x="101" y="493" width="214" height="31"/>
+                                <rect key="frame" x="92" y="493" width="233" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Pick image from photo library"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Upload image from photo library"/>
                                 <connections>
                                     <action selector="btnClicked" destination="8cr-2K-ICa" eventType="touchUpInside" id="9Ts-DR-D2v"/>
                                 </connections>
