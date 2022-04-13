@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,11 +24,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="waterbottle_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sIx-C3-57z">
-                                <rect key="frame" x="75" y="323" width="240" height="177"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-Yj-MkH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-Yj-MkH">
                                 <rect key="frame" x="229" y="284.5" width="68" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <imageReference key="image" image="questionmark" catalog="system" symbolScale="medium"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="heavy"/>
@@ -64,20 +62,21 @@
                                     <segue destination="SfW-2f-5o8" kind="show" id="ljw-sH-LVD"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trash_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8C3-gM-CbZ">
+                                <rect key="frame" x="73" y="284" width="268" height="265"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sIx-C3-57z" secondAttribute="trailing" constant="99" id="7xF-hL-iAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8C3-gM-CbZ" secondAttribute="bottom" constant="313" id="6KF-og-Len"/>
                             <constraint firstItem="kIa-kQ-MV0" firstAttribute="top" secondItem="2c8-XI-Kql" secondAttribute="bottom" constant="-2.5" id="ADp-lu-7Ny"/>
                             <constraint firstItem="FRn-M3-Odv" firstAttribute="top" secondItem="jjN-7B-ciq" secondAttribute="bottom" constant="-1" id="PcW-KY-4F4"/>
-                            <constraint firstItem="sIx-C3-57z" firstAttribute="top" secondItem="Ysb-Yj-MkH" secondAttribute="bottom" constant="-23" id="T9f-1E-Rmb"/>
+                            <constraint firstItem="8C3-gM-CbZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="Q6D-gr-mhl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRn-M3-Odv" secondAttribute="trailing" constant="20" id="b5f-gD-L0a"/>
-                            <constraint firstItem="Ysb-Yj-MkH" firstAttribute="leading" secondItem="sIx-C3-57z" secondAttribute="trailing" constant="-86" id="eWT-BH-Dpi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jjN-7B-ciq" secondAttribute="bottom" constant="137" id="flL-vU-lyU"/>
                             <constraint firstItem="kIa-kQ-MV0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kd6-d8-CkH"/>
                             <constraint firstItem="2c8-XI-Kql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kwG-32-ZZh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sIx-C3-57z" secondAttribute="bottom" constant="362" id="s2N-Hg-kA6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2c8-XI-Kql" secondAttribute="bottom" constant="135.5" id="vGQ-fJ-O6E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jjN-7B-ciq" secondAttribute="trailing" constant="30" id="y5R-4v-5lf"/>
                         </constraints>
@@ -156,7 +155,7 @@
         <image name="camera.shutter.button" catalog="system" width="128" height="109"/>
         <image name="questionmark" catalog="system" width="96" height="128"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="waterbottle_icon" width="512" height="512"/>
+        <image name="trash_icon" width="225" height="225"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
