@@ -12,6 +12,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     var userImage:UIImage? = nil
     
+    @IBOutlet weak var userIcon: UIImageView!
+    
     //@IBOutlet var imageView: UIImageView! //connect to UIImageView on storyboard
     //@IBOutlet var chooseButton: UIButton! //connect to UIButton on storyboard
     var myImagePicker = UIImagePickerController() //could be a let
@@ -36,6 +38,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         })
 
         userImage = image
+        userIcon.image = userImage
     }
 
     
@@ -82,6 +85,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         //IMAGE BEING SELECTED IS STORED HERE AS image
         userImage = image
+        userIcon.image = userImage
     }
     
     func makeSeque(_ img: UIImage){
