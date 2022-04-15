@@ -86,10 +86,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func makeSeque(_ img: UIImage){
         let vc = storyboard?.instantiateViewController(identifier: "predictorViewController") as? predictorViewController
-                
-        vc?.imageView.image = img
         
-        self.navigationController?.pushViewController(vc!, animated: true)
+        vc?.yesOrNoImage = img
+        print("makeSeque")
+        print(img)
+        
+//        self.navigationController?.pushViewController(vc!, animated: true)
+        self.present(vc!, animated: true)
     }
 }
 
@@ -112,7 +115,7 @@ extension ViewController {
             return
         }
         
-        let mostConfident = formatPredictions(predictions)[0]
+        let mostConfident = formatPredictions(predictions)
         
         if(mostConfident){
             makeSeque(UIImage(named: "yes_icon")!)
@@ -122,20 +125,18 @@ extension ViewController {
         }
     }
     
-    func formatPredictions(_ predictions: [Predictor.Prediction]) -> [Bool] {
-        let top: [Bool] = predictions.prefix(toShow).map { prediction in
+    func formatPredictions(_ predictions: [Predictor.Prediction]) -> Bool {
+        print(predictions)
+        
+        for prediction in predictions {
             let name = prediction.classification
-            
-            if Int(prediction.confidencePercentage) ?? 0 > 10 && name == "plastic bag" {
-//                return "This is \(prediction.confidencePercentage)% likely to be a plastic bag"
+            print(Double(prediction.confidencePercentage))
+            if Double(prediction.confidencePercentage) ?? 0 > 10 && name == "plastic bag" {
+                print(Double(prediction.confidencePercentage))
                 return true
             }
-            else{
-                return false
-            }
         }
-        
-        return top
+        return false
     }
 }
 

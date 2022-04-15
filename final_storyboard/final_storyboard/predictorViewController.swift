@@ -12,9 +12,12 @@ import UIKit
 class predictorViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-        
+    var yesOrNoImage:UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image=yesOrNoImage
+        print(yesOrNoImage)
         // Do any additional setup after loading the view.
     }
     
