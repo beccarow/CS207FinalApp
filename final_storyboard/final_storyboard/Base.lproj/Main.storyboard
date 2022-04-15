@@ -34,11 +34,11 @@
                                     <constraint firstAttribute="width" constant="140" id="qD5-nW-EHE"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="recycle" translatesAutoresizingMaskIntoConstraints="NO" id="agH-tq-fXp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle" translatesAutoresizingMaskIntoConstraints="NO" id="agH-tq-fXp">
                                 <rect key="frame" x="73" y="284" width="269" height="237"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="301" id="gWx-Zb-BWj"/>
-                                    <constraint firstAttribute="height" constant="232" id="yjv-bU-M3F"/>
+                                    <constraint firstAttribute="width" constant="269" id="gWx-Zb-BWj"/>
+                                    <constraint firstAttribute="height" constant="237" id="yjv-bU-M3F"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnA-F7-ccL">
@@ -94,10 +94,13 @@
                                     <action selector="btnClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="08w-tQ-atz"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-Yj-MkH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-Yj-MkH">
                                 <rect key="frame" x="290" y="284.5" width="68" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="0cY-rZ-LgO"/>
+                                    <constraint firstAttribute="width" constant="68" id="f7c-Qs-LhH"/>
+                                </constraints>
                                 <imageReference key="image" image="questionmark" catalog="system" symbolScale="medium"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="heavy"/>
                             </imageView>
@@ -110,15 +113,17 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GnA-F7-ccL" secondAttribute="bottom" constant="107" id="DZ2-wj-EJ5"/>
                             <constraint firstItem="GnA-F7-ccL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="E07-LR-gma"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NMJ-te-vwi" secondAttribute="bottom" constant="107" id="GGo-c5-81p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ysb-Yj-MkH" secondAttribute="trailing" constant="56" id="Lmy-fq-Cp5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vu2-Dj-Dwj" secondAttribute="bottom" constant="35" id="aQz-fG-a1r"/>
                             <constraint firstItem="GnA-F7-ccL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ayH-3g-tEF"/>
                             <constraint firstItem="vu2-Dj-Dwj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dO4-nS-ado"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="agH-tq-fXp" secondAttribute="bottom" constant="317" id="f7x-YP-rgP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="agH-tq-fXp" secondAttribute="bottom" constant="341" id="f7x-YP-rgP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jjN-7B-ciq" secondAttribute="bottom" constant="167" id="flL-vU-lyU"/>
-                            <constraint firstItem="agH-tq-fXp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="jZW-2P-Cph"/>
+                            <constraint firstItem="agH-tq-fXp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="jZW-2P-Cph"/>
                             <constraint firstItem="2c8-XI-Kql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="kwG-32-ZZh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2c8-XI-Kql" secondAttribute="bottom" constant="161" id="vGQ-fJ-O6E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jjN-7B-ciq" secondAttribute="trailing" constant="33" id="y5R-4v-5lf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ysb-Yj-MkH" secondAttribute="bottom" constant="516" id="zpQ-Gj-ILQ"/>
                         </constraints>
                     </view>
                     <connections>
