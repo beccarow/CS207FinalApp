@@ -4,6 +4,8 @@
 <dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>App needs location to find recycling plant</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App needs access to photo library to select picture</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>App needs location to find recycling plant</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
