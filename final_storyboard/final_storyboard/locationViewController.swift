@@ -22,8 +22,8 @@ class locationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         locationManager.requestWhenInUseAuthorization()
         
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        let region = MKCoordinateRegion(center: myCurrLocation, span: span) //define currlocation
-        mapView.setRegion(region, animated: true)
+        //let region = MKCoordinateRegion(center: myCurrLocation, span: span) //define currlocation
+        //mapView.setRegion(region, animated: true)
     }
     // MARK: CoreLocation Delegate Methods
 
@@ -38,7 +38,6 @@ class locationViewController: UIViewController, CLLocationManagerDelegate, MKMap
             locationManager.requestWhenInUseAuthorization()
         }
         
-        <#code#>
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocation locations: [CLLocation]) {
@@ -46,7 +45,6 @@ class locationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         //get info you need here from GPS or wherever the location is
         
         locationManager.stopUpdatingLocation()
-        <#code#>
     }
 
     /*
