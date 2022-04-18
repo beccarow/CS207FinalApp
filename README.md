@@ -1,5 +1,11 @@
 # Final Team Project L
 
-App utilizing CoreML framework with image recognition for water bottles
+## Recyclables Classifier: About the app
 
-We plan create an app that can upload a photo from the user's camera roll (UI image picker controller) or take a live capture photo and categorize the subject as either a water bottle or not. We will have a welcome page with a choice to either proceed to live capture or to choose a photo from the camera roll. The next step will have a popup that displays a message that either confirms or denies that the subject is in fact a water bottle. There will also be an option to return to the original screen that displays the option to take or choose an existing photo.
+The Recyclables Classifer app classifies images of objects as recyclable and not recyclable and directs users to the recyclable center nearest to the user's current location. This app utilizes the MobileNetV2 image classification model through Core ML as well as MapKit.
+
+
+## Features
+
+The user can upload an existing photo from their photo library or take a live capture photo and determine the subject's classification. The chosen image is displayed on a screen, and users are informed of the percent likelihood of the subject being recyclable or not. They are then given the choice to find a recycling center close by. Users are able to reupload and/or retake photos until they find they decide on one to classify by tapping the "Determine" button.
+

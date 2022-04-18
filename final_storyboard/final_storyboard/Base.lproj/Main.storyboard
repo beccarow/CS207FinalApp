@@ -226,6 +226,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cla-8Y-kcn"/>
                         <color key="backgroundColor" red="0.98670259049999998" green="0.88329432399999996" blue="0.76507083760000005" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cZT-bD-4DL" firstAttribute="leading" secondItem="Cla-8Y-kcn" secondAttribute="leading" constant="42" id="3yw-Lm-8iv"/>
                             <constraint firstItem="1ei-R6-74Y" firstAttribute="leading" secondItem="fXG-R5-USe" secondAttribute="trailing" constant="-374" id="6Fx-Lo-4P9"/>
