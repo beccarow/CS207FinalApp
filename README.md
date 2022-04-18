@@ -7,5 +7,17 @@ The Recyclables Classifer app classifies images of objects as recyclable and not
 
 ## Features
 
-The user can upload an existing photo from their photo library or take a live capture photo and determine the subject's classification. The chosen image is displayed on a screen, and users are informed of the percent likelihood of the subject being recyclable or not. They are then given the choice to find a recycling center close by. Users are able to reupload and/or retake photos until they find they decide on one to classify by tapping the "Determine" button.
+The user can upload an existing photo from their photo library or take a live capture photo and determine the subject's classification. Users are informed of the percent likelihood of the subject being recyclable or not and are then given the choice to find a recycling center close by. Users are able to reupload and/or retake photos until they find they decide on one to classify.
+
+## Design
+
+When first opened, the app has a launch screen with a simple icon that matches its app icon on the home screen. The main screen has icon buttons that allow users to upload or take photos, a "Determine" button to process and classify the image, and a space for the chosen photo to be displayed. The next screen will present a green or red plastic bag icon depending on whether the image is classified as recyclable, as well as the text that relays information about percent likelihood. Finally, the last screen presents the user with an interactive map that shows them their location and the recycling center's location. The user can go back to earlier pages at any stage in this process.
+
+## Team members
+
+1. Pippa Lother: implementing the map & UI/storyboard design
+2. Kushara Ghosh: camera functionality & ML model integration
+3. Soumya Bodavula: photo library functionality & app/launch screen icon
+4. Rebecca Row: image classification model integration
+5. Joie You: UI/storyboard design for all screens
 
