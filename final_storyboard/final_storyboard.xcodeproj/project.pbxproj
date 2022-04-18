@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F8BC8C52804D15100335ACC /* pickImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BC8C42804D15100335ACC /* pickImageViewController.swift */; };
 		72E06F3B27FAC032006669CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06F3A27FAC032006669CC /* AppDelegate.swift */; };
 		72E06F3D27FAC032006669CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06F3C27FAC032006669CC /* SceneDelegate.swift */; };
 		72E06F3F27FAC032006669CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E06F3E27FAC032006669CC /* ViewController.swift */; };
 		72E06F4227FAC032006669CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E06F4027FAC032006669CC /* Main.storyboard */; };
 		72E06F4427FAC034006669CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E06F4327FAC034006669CC /* Assets.xcassets */; };
 		72E06F4727FAC034006669CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E06F4527FAC034006669CC /* LaunchScreen.storyboard */; };
+		7B8613E32804D9AF00BEF3E3 /* locationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8613E22804D9AF00BEF3E3 /* locationViewController.swift */; };
 		F7F23DFC280092E200FC432A /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F7F23DFB280092E200FC432A /* MobileNetV2.mlmodel */; };
 		F7F23DFE2800930A00FC432A /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F23DFD2800930A00FC432A /* Predictor.swift */; };
 		F7F23E002800932100FC432A /* confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F23DFF2800932100FC432A /* confidenceString.swift */; };
+		F7F23E0228075FCC00FC432A /* predictorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F23E0128075FCC00FC432A /* predictorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F8BC8C42804D15100335ACC /* pickImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickImageViewController.swift; sourceTree = "<group>"; };
 		72E06F3727FAC032006669CC /* final_storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final_storyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E06F3A27FAC032006669CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E06F3C27FAC032006669CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,9 +29,11 @@
 		72E06F4327FAC034006669CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E06F4627FAC034006669CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72E06F4827FAC034006669CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B8613E22804D9AF00BEF3E3 /* locationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationViewController.swift; sourceTree = "<group>"; };
 		F7F23DFB280092E200FC432A /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		F7F23DFD2800930A00FC432A /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
 		F7F23DFF2800932100FC432A /* confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confidenceString.swift; sourceTree = "<group>"; };
+		F7F23E0128075FCC00FC432A /* predictorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = predictorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +69,12 @@
 				72E06F3A27FAC032006669CC /* AppDelegate.swift */,
 				72E06F3C27FAC032006669CC /* SceneDelegate.swift */,
 				72E06F3E27FAC032006669CC /* ViewController.swift */,
-				3F8BC8C42804D15100335ACC /* pickImageViewController.swift */,
+				F7F23E0128075FCC00FC432A /* predictorViewController.swift */,
 				F7F23DFB280092E200FC432A /* MobileNetV2.mlmodel */,
 				F7F23DFD2800930A00FC432A /* Predictor.swift */,
 				F7F23DFF2800932100FC432A /* confidenceString.swift */,
 				72E06F4027FAC032006669CC /* Main.storyboard */,
+				7B8613E22804D9AF00BEF3E3 /* locationViewController.swift */,
 				72E06F4327FAC034006669CC /* Assets.xcassets */,
 				72E06F4527FAC034006669CC /* LaunchScreen.storyboard */,
 				72E06F4827FAC034006669CC /* Info.plist */,
@@ -153,9 +156,10 @@
 				72E06F3F27FAC032006669CC /* ViewController.swift in Sources */,
 				72E06F3B27FAC032006669CC /* AppDelegate.swift in Sources */,
 				F7F23E002800932100FC432A /* confidenceString.swift in Sources */,
+				F7F23E0228075FCC00FC432A /* predictorViewController.swift in Sources */,
 				F7F23DFC280092E200FC432A /* MobileNetV2.mlmodel in Sources */,
+				7B8613E32804D9AF00BEF3E3 /* locationViewController.swift in Sources */,
 				72E06F3D27FAC032006669CC /* SceneDelegate.swift in Sources */,
-				3F8BC8C52804D15100335ACC /* pickImageViewController.swift in Sources */,
 				F7F23DFE2800930A00FC432A /* Predictor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,14 +309,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HVMD35ULBH;
+				DEVELOPMENT_TEAM = 98336275MJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = final_storyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Classify Recyclables";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App needs camera to take photo for predicting";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs location to find recycling plant";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs location to find recycling plant";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location to find recycling plant";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App needs access to photo library to select picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,14 +344,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HVMD35ULBH;
+				DEVELOPMENT_TEAM = 98336275MJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = final_storyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Classify Recyclables";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App needs camera to take photo for predicting";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs location to find recycling plant";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs location to find recycling plant";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location to find recycling plant";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App needs access to photo library to select picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

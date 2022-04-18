@@ -53,7 +53,7 @@ class Predictor {
     }
     
     func makePredictions(for photo: UIImage, completionHandler: @escaping ImagePredictionHandler) throws {
-        guard let orientation = CGImagePropertyOrientation(rawValue: UInt32(UIDevice.current.orientation.rawValue)) else { return <#default value#> }
+        guard let orientation = CGImagePropertyOrientation(rawValue: UInt32(UIDevice.current.orientation.rawValue)) else { return }
         //CGImagePropertyOrientation(rawValue: photo.imageOrientation)
         
         guard let photoImage = photo.cgImage else {
