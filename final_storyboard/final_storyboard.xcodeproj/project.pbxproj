@@ -312,6 +312,7 @@
 				DEVELOPMENT_TEAM = 98336275MJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = final_storyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Recyclables Classifier";
 				INFOPLIST_KEY_NSCameraUsageDescription = "App needs camera to take photo for predicting";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs location to find recycling plant";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs location to find recycling plant";
@@ -346,6 +347,7 @@
 				DEVELOPMENT_TEAM = 98336275MJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = final_storyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Recyclables Classifier";
 				INFOPLIST_KEY_NSCameraUsageDescription = "App needs camera to take photo for predicting";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs location to find recycling plant";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs location to find recycling plant";
