@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,16 +36,17 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2V-kA-QmK">
                                 <rect key="frame" x="33" y="117" width="348" height="66"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Recyclabes Classifier">
+                                    <fragment content="Recyclables Classifier">
                                         <attributes>
-                                            <font key="NSFont" size="34" name="TrebuchetMS"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="34" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COQ-Cs-Y7b">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COQ-Cs-Y7b">
                                 <rect key="frame" x="87.5" y="575" width="59" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="k06-cN-Vbc"/>
@@ -62,7 +62,7 @@
                                     <action selector="takePhotoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRy-a0-C1n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5w-a4-5a8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5w-a4-5a8">
                                 <rect key="frame" x="224" y="517" width="167" height="164"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="cbO-m5-Xai"/>
@@ -87,9 +87,7 @@
                                     <fragment content="Take Photo">
                                         <attributes>
                                             <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="27" name="TrebuchetMS"/>
-                                            <font key="NSOriginalFont" size="27" name="TrebuchetMS"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="25" name="Helvetica-Light"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -102,11 +100,11 @@
                                     <constraint firstAttribute="height" constant="32" id="8A5-Zg-vxS"/>
                                     <constraint firstAttribute="width" constant="155" id="icv-7t-8jk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vu2-Dj-Dwj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vu2-Dj-Dwj">
                                 <rect key="frame" x="99" y="780" width="216" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="216" id="MHL-U2-Y9I"/>
@@ -114,14 +112,8 @@
                                 </constraints>
                                 <color key="tintColor" red="0.1534952003" green="0.58132256069999999" blue="0.65361655289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Determine">
-                                            <attributes>
-                                                <font key="NSFont" size="36" name="TrebuchetMS"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="Determine">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="processPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x62-2c-Yc7"/>
@@ -131,6 +123,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98670259049999998" green="0.88329432399999996" blue="0.76507083760000005" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vu2-Dj-Dwj" secondAttribute="trailing" constant="99" id="00w-24-rbN"/>
+                            <constraint firstItem="vu2-Dj-Dwj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="10p-vC-Nof"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y5w-a4-5a8" secondAttribute="bottom" constant="181" id="1zc-E4-Vbf"/>
                             <constraint firstItem="wE9-ig-SID" firstAttribute="top" secondItem="Dgt-Ul-sTd" secondAttribute="top" id="28w-DN-ldJ"/>
                             <constraint firstItem="vu2-Dj-Dwj" firstAttribute="top" secondItem="wE9-ig-SID" secondAttribute="bottom" constant="64" id="3TK-BR-9Rm"/>
@@ -141,7 +135,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ysb-Yj-MkH" secondAttribute="trailing" constant="56" id="Lmy-fq-Cp5"/>
                             <constraint firstItem="P2V-kA-QmK" firstAttribute="centerX" secondItem="agH-tq-fXp" secondAttribute="centerX" id="NEs-y7-4ru"/>
                             <constraint firstItem="Dgt-Ul-sTd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wE9-ig-SID" secondAttribute="trailing" id="O36-2H-6zB"/>
+                            <constraint firstItem="vu2-Dj-Dwj" firstAttribute="top" secondItem="COQ-Cs-Y7b" secondAttribute="bottom" constant="134" id="OZP-su-ZLR"/>
                             <constraint firstItem="Dgt-Ul-sTd" firstAttribute="trailing" secondItem="Y5w-a4-5a8" secondAttribute="trailing" id="QRB-bc-5W4"/>
+                            <constraint firstItem="vu2-Dj-Dwj" firstAttribute="top" secondItem="Y5w-a4-5a8" secondAttribute="bottom" constant="99" id="RQC-76-KCl"/>
                             <constraint firstItem="COQ-Cs-Y7b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87.5" id="RoC-Oj-KGG"/>
                             <constraint firstItem="COQ-Cs-Y7b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="531" id="T5r-kJ-4oa"/>
                             <constraint firstItem="wE9-ig-SID" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aJC-6k-0nW"/>
@@ -151,6 +147,7 @@
                             <constraint firstItem="Dgt-Ul-sTd" firstAttribute="top" secondItem="Y5w-a4-5a8" secondAttribute="bottom" constant="3" id="deh-ZW-6tW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="agH-tq-fXp" secondAttribute="bottom" constant="372" id="f7x-YP-rgP"/>
                             <constraint firstItem="Dgt-Ul-sTd" firstAttribute="leading" secondItem="wE9-ig-SID" secondAttribute="trailing" constant="53" id="faf-RE-DZs"/>
+                            <constraint firstItem="vu2-Dj-Dwj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="736" id="geb-SF-wij"/>
                             <constraint firstItem="Y5w-a4-5a8" firstAttribute="leading" secondItem="COQ-Cs-Y7b" secondAttribute="trailing" constant="77.5" id="hph-Yr-jJf"/>
                             <constraint firstItem="agH-tq-fXp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="jZW-2P-Cph"/>
                             <constraint firstItem="wE9-ig-SID" firstAttribute="bottom" secondItem="Dgt-Ul-sTd" secondAttribute="bottom" id="sJR-jl-Ozm"/>
@@ -175,16 +172,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZT-bD-4DL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cZT-bD-4DL">
                                 <rect key="frame" x="42" y="728" width="330" height="78"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="0hr-xs-C7N"/>
                                     <constraint firstAttribute="height" constant="78" id="EuU-I4-ijp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <color key="tintColor" red="0.1534952003" green="0.58132256069999999" blue="0.65361655289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Find Recycling Plant"/>
+                                <state key="normal" title="Find Closest Recycling Plant"/>
                                 <connections>
                                     <segue destination="Uv2-p4-lwQ" kind="show" id="sGL-kl-auK"/>
                                 </connections>
@@ -203,17 +200,17 @@
                                     <constraint firstAttribute="width" constant="374" id="cPk-i1-aUW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ei-R6-74Y">
-                                <rect key="frame" x="20" y="221" width="374" height="40"/>
+                                <rect key="frame" x="20" y="235" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="d8j-zs-AVj"/>
                                     <constraint firstAttribute="height" constant="40" id="kJw-eS-W8J"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QC-1N-baK">
@@ -223,7 +220,7 @@
                                     <constraint firstAttribute="width" constant="374" id="h2O-ni-wcw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -234,7 +231,7 @@
                             <constraint firstItem="1ei-R6-74Y" firstAttribute="leading" secondItem="fXG-R5-USe" secondAttribute="trailing" constant="-374" id="6Fx-Lo-4P9"/>
                             <constraint firstItem="fXG-R5-USe" firstAttribute="top" secondItem="2QC-1N-baK" secondAttribute="bottom" constant="8" symbolic="YES" id="GRE-lN-7tX"/>
                             <constraint firstItem="2QC-1N-baK" firstAttribute="top" secondItem="Cla-8Y-kcn" secondAttribute="top" constant="81" id="Pr8-5H-Z4m"/>
-                            <constraint firstItem="1ei-R6-74Y" firstAttribute="top" secondItem="Cla-8Y-kcn" secondAttribute="top" constant="177" id="Q1v-pH-5Xw"/>
+                            <constraint firstItem="1ei-R6-74Y" firstAttribute="top" secondItem="Cla-8Y-kcn" secondAttribute="top" constant="191" id="Q1v-pH-5Xw"/>
                             <constraint firstItem="1ei-R6-74Y" firstAttribute="centerX" secondItem="Cla-8Y-kcn" secondAttribute="centerX" id="StN-Ae-drP"/>
                             <constraint firstItem="Cla-8Y-kcn" firstAttribute="bottom" secondItem="RGs-AO-ocW" secondAttribute="bottom" constant="142" id="egp-BF-UEb"/>
                             <constraint firstItem="Cla-8Y-kcn" firstAttribute="bottom" secondItem="cZT-bD-4DL" secondAttribute="bottom" constant="56" id="lfb-3Y-PMq"/>
@@ -273,7 +270,7 @@
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1f1-XW-eey"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98670259049999998" green="0.88329432399999996" blue="0.76507083760000005" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="cLH-D3-kUX"/>
                     <connections>
@@ -291,8 +288,5 @@
         <image name="recycle" width="600" height="600"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="yes_icon" width="2400" height="2400"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

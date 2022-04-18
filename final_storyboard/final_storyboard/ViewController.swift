@@ -141,14 +141,14 @@ extension ViewController {
             if Double(prediction.confidencePercentage) ?? 0 > 10 && recyclables.contains(name) {
                 predictionClassification = "This is \(prediction.confidencePercentage)% likely"
                 predictionPercentage = "to be a a \(name)."
-                predictionRecyclable = "Recyclable: Yes"
+                predictionRecyclable = "Recyclable? Yes"
                 return true
             }
         }
         
         predictionClassification = "This is \(predictions[0].confidencePercentage)% likely"
         predictionPercentage = "to be a a \(predictions[0].classification)."
-        predictionRecyclable = "Recyclable: No"
+        predictionRecyclable = "Recyclable? No"
         return false
     }
 }
