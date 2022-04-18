@@ -3,7 +3,7 @@
 //  final_storyboard
 //
 //  Created by Joie You on 4/4/22.
-//
+//  Edited by Kushagra Ghosh on 4/15/22.
 
 import Foundation
 import UIKit
@@ -17,7 +17,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //@IBOutlet var imageView: UIImageView! //connect to UIImageView on storyboard
     //@IBOutlet var chooseButton: UIButton! //connect to UIButton on storyboard
     var myImagePicker = UIImagePickerController() //could be a let
-
+    
+    var predictionClassification: String = "";
+    var predictionPercentage: String = "";
+    var predictionRecyclable: String = "";
+    
     @IBAction func btnClicked() { //connect to UIButton on storyboard
 
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
@@ -92,10 +96,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let vc = storyboard?.instantiateViewController(identifier: "predictorViewController") as? predictorViewController
         
         vc?.yesOrNoImage = img
-        print("makeSeque")
-        print(img)
         
-//        self.navigationController?.pushViewController(vc!, animated: true)
+        vc?.classification = predictionClassification
+        vc?.percentage = predictionPercentage
+        vc?.recyclable = predictionRecyclable
+        
         self.present(vc!, animated: true)
     }
 }
@@ -130,16 +135,20 @@ extension ViewController {
     }
     
     func formatPredictions(_ predictions: [Predictor.Prediction]) -> Bool {
-        print(predictions)
-        
+        let recyclables: Set = ["plastic bag", "water bottle", "water jug", "beer bottle", "pop bottle, soda bottle", "wine bottle", "pill bottle", "notebook, notebook computer", "comic book", "file, file cabinet, filing cabinet", "milk can", "bottlecap", "remote control, remote", "carton", "plate", "tray", "Petri dish", "menu", "binder, ring-binder", "cup", "envelope", "soap dispenser"]
         for prediction in predictions {
             let name = prediction.classification
-            print(Double(prediction.confidencePercentage))
-            if Double(prediction.confidencePercentage) ?? 0 > 10 && name == "plastic bag" {
-                print(Double(prediction.confidencePercentage))
+            if Double(prediction.confidencePercentage) ?? 0 > 10 && recyclables.contains(name) {
+                predictionClassification = "This is \(prediction.confidencePercentage)% likely"
+                predictionPercentage = "to be a a \(name)."
+                predictionRecyclable = "Recyclable: Yes"
                 return true
             }
         }
+        
+        predictionClassification = "This is \(predictions[0].confidencePercentage)% likely"
+        predictionPercentage = "to be a a \(predictions[0].classification)."
+        predictionRecyclable = "Recyclable: No"
         return false
     }
 }
