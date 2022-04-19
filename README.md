@@ -1,8 +1,8 @@
 # Final Team Project L
 
-## Recyclables Classifier: About the app
+## Bin It! - About the app
 
-The Recyclables Classifer app classifies images of objects as recyclable and not recyclable and directs users to the recyclable center nearest to the user's current location. This app utilizes the MobileNetV2 image classification model through Core ML as well as MapKit.
+The Bin It! app classifies images of objects as recyclable and not recyclable and directs users to the recyclable center nearest to the user's current location. This app utilizes the MobileNetV2 image classification model through Core ML as well as MapKit.
 
 
 ## Features
@@ -15,9 +15,9 @@ When first opened, the app has a launch screen with a simple icon that matches i
 
 ## Team members
 
-1. Pippa Lother: implementing the map & UI/storyboard design
-2. Kushara Ghosh: camera functionality & ML model integration
-3. Soumya Bodavula: photo library functionality & app/launch screen icon
-4. Rebecca Row: image classification model integration
-5. Joie You: UI/storyboard design for all screens
+1. Pippa Lother: CoreLocation and GPS implementation
+2. Kushara Ghosh: camera integration & ViewController implementation
+3. Soumya Bodavula: photo upload implementation & app/launch screen icon
+4. Rebecca Row: implementation of CoreML model
+5. Joie You: UI/storyboard design
 

@@ -33,17 +33,10 @@
                                 <imageReference key="image" image="questionmark" catalog="system" symbolScale="medium"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="heavy"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2V-kA-QmK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recyclables Classifier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2V-kA-QmK">
                                 <rect key="frame" x="33" y="117" width="348" height="66"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Recyclables Classifier">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="34" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="31"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COQ-Cs-Y7b">
@@ -121,7 +114,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.98670259049999998" green="0.88329432399999996" blue="0.76507083760000005" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96854988399999997" green="0.82184418989999997" blue="0.65501447489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vu2-Dj-Dwj" secondAttribute="trailing" constant="99" id="00w-24-rbN"/>
                             <constraint firstItem="vu2-Dj-Dwj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="10p-vC-Nof"/>
@@ -199,7 +192,7 @@
                                     <constraint firstAttribute="height" constant="40" id="Gpr-kp-uDx"/>
                                     <constraint firstAttribute="width" constant="374" id="cPk-i1-aUW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -209,7 +202,7 @@
                                     <constraint firstAttribute="width" constant="374" id="d8j-zs-AVj"/>
                                     <constraint firstAttribute="height" constant="40" id="kJw-eS-W8J"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="38"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -219,13 +212,13 @@
                                     <constraint firstAttribute="height" constant="40" id="3TT-mC-Tda"/>
                                     <constraint firstAttribute="width" constant="374" id="h2O-ni-wcw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cla-8Y-kcn"/>
-                        <color key="backgroundColor" red="0.98670259049999998" green="0.88329432399999996" blue="0.76507083760000005" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96854988399999997" green="0.82184418989999997" blue="0.65501447489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cZT-bD-4DL" firstAttribute="leading" secondItem="Cla-8Y-kcn" secondAttribute="leading" constant="42" id="3yw-Lm-8iv"/>

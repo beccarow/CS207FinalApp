@@ -22,12 +22,26 @@
                                     <constraint firstAttribute="height" constant="167" id="Y1d-yF-oY2"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bin It!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn4-hU-09L">
+                                <rect key="frame" x="136.5" y="259" width="141" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="ECF-hl-kVq"/>
+                                    <constraint firstAttribute="height" constant="50" id="JSS-oG-DaP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98670259049999998" green="0.88329432399999996" blue="0.76507083760000005" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MqJ-iD-Dth" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2wI-ld-zIS"/>
                             <constraint firstItem="MqJ-iD-Dth" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4IZ-kP-UjK"/>
+                            <constraint firstItem="rn4-hU-09L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="215" id="4gc-4z-Fag"/>
+                            <constraint firstItem="rn4-hU-09L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136.5" id="aHt-wL-z41"/>
+                            <constraint firstItem="rn4-hU-09L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oY8-GM-R5e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rn4-hU-09L" secondAttribute="trailing" constant="136.5" id="sNc-G6-E1j"/>
                         </constraints>
                     </view>
                 </viewController>

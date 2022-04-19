@@ -29,7 +29,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
             myImagePicker.delegate = self
             myImagePicker.sourceType = .photoLibrary //another source type: .camera
-            myImagePicker.allowsEditing = false //true: allows resizing/cropping after selection
+            myImagePicker.allowsEditing = true //true: allows resizing/cropping after selection
             myImagePicker.mediaTypes = ["public.image"] //only pictures, not movies/videos
 
             present(myImagePicker, animated: true, completion: nil)
