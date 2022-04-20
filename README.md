@@ -16,8 +16,12 @@ When first opened, the app has a launch screen with a simple icon that matches i
 ## Team members
 
 1. Pippa Lother: CoreLocation and GPS implementation
-2. Kushara Ghosh: camera integration & ViewController implementation
+2. Kushagra Ghosh: camera integration & ViewController implementation
 3. Soumya Bodavula: photo upload implementation & app/launch screen icon
 4. Rebecca Row: implementation of CoreML model
 5. Joie You: UI/storyboard design
 
+## Videos
+
+Presentation Video: https://youtu.be/d8_yprbwCoI
+Demo Video: https://youtu.be/Kn4WP0yP4rc
